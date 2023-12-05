@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+@mixin disabled-arrow {
+  cursor: default;
+  color: rgb(200, 200, 200);
+  fill: rgb(200, 200, 200);
+}
+
+
+
+.container-pagination {
+    width: 100%;
+    margin-top: 40px;
+    .block-flex {
+      display: flex;
+      .left-block,
+      .left-block-disabled {
+        display: flex;
+        gap: 8px;
+        padding: 5px;
+        border: 1px solid black;
+        border-radius: 10%;
+        background: rgb(36, 14, 14);
+        cursor: pointer;
+        &.left-block-disabled {
+          @include disabled-arrow();
+        }
+        .nav,
+        .nav-disabled {
+          &.nav-disabled {
+            @include disabled-arrow();
+          }
+          color: white;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 24px;
+        }
+        .icon {
+          cursor: pointer;
+          fill: rgb(200, 200, 200);
+          width: 24px;
+          height: 24px;
+        }
+        .icon-disabled {
+          cursor: default;
+          @include disabled-arrow();
+          width: 24px;
+          height: 24px;
+        }
+      }
+      .middle-block {
+        color: beige;
+        display: flex;
+        gap: 32px;
+      }
+      .right-block,
+      .right-block-disabled {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 5px;
+        border: 1px solid black;
+        border-radius: 10%;
+        background: rgb(36, 14, 14);
+        &.right-block-disabled {
+          @include disabled-arrow();
+        }
+        .nav,
+        .nav-disabled {
+          &.nav-disabled {
+            @include disabled-arrow();
+          }
+          color: white;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 24px;
+        }
+        .icon {
+          cursor: pointer;
+          fill: rgb(200, 200, 200);
+          width: 24px;
+          height: 24px;
+        }
+        .icon-disabled {
+          @include disabled-arrow();
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }

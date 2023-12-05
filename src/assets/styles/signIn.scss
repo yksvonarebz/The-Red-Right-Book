@@ -1,0 +1,48 @@
+.container-SignIn {
+  margin: 10% auto;
+  .container-SignIn_block {
+    .container-SignIn__link {
+      text-decoration: none;
+      color: #fff;
+      margin: 0;
+      padding-top: 20px;
+    }
+    .flex-container {
+      width: 25%;
+      .container-SignIn-form {
+        border: 2px solid #fff;
+        width: 60%;
+        padding: 40px;
+        border-radius: 20px;
+        .label-w-input {
+          width: 100%;
+          margin-top: 10px;
+        }
+        .signIn-inp {
+          width: 100%;
+          margin: 10px 0;
+          padding: 10px;
+          border-radius: 3px;
+          border: none;
+        }
+        .signIn-btn {
+          font-size: 20px;
+          font-weight: 600;
+          margin-top: 30px;
+          width: 100%;
+          height: 50px;
+          border-radius: 5px;
+          background-color: crimson;
+          border: none;
+          color: white;
+          transition: 0.4s;
+          &:hover {
+          font-size: 26px;
+          transform: rotate(360deg);
+          transition: 0.7s;
+          }
+        }
+      }
+    }
+  }
+}

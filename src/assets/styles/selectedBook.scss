@@ -1,0 +1,110 @@
+.container-selectedBook {
+  margin: 40px auto;
+  .block-w-book {
+    display: flex;
+    gap: 50px;
+    margin: 20px;
+    
+    .left-block {
+      width: 300px;
+      margin: 0;
+      margin-left: 150px;
+      text-align: center;
+      .left-block_image {
+        width: 300px;
+      }
+      .left-block_btn-buy {
+        text-align: center;
+        background-color: crimson;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.4s;
+        &:hover {
+          background-color: #fff;
+          color: crimson;
+          transition: 0.7s;
+        }
+        a {
+          font-size: 20px;
+          padding: 15px;
+          display: block;
+          text-decoration: none;
+          cursor: pointer;
+          color: #fff;
+          transition: 0.4s;
+        }
+        a:hover {
+          color: crimson;
+          transition: 0.7s;
+        }
+      }
+      .left-block_btn-add-basket {
+        border: none;
+        margin-top: 15px;
+        width: 100%;
+        padding: 15px;
+        font-size: 20px;
+        color: #222;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.4s;
+        &:hover {
+          background-color: #222;
+          color: #fff;
+          transition: 0.7s;
+        }
+      }
+    }
+    .right-block {
+      margin: 0;
+      width: 60%;
+      color: #fff;
+      .container-table {
+        width: 100%;
+        margin: 0;
+        tr {
+          td {
+            width: 50%;
+            margin: 0;
+            padding: 5px;
+            a {
+              color: #fff;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+      .container-activeTabs {
+        margin-top: 30px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        cursor: default;
+        li {
+          cursor: pointer;
+          width: 100%;
+          list-style: none;
+          color: #fff;
+          font-size: 20px;
+        }
+        .ACTIVE {
+          color: crimson;
+        }
+        .DISABLED {
+          color: grey;
+        }
+      }
+      .container-tabContent {
+        padding: 20px 5px;
+        color: azure;
+        font-size: 20px;
+        // background: rgb(90, 55, 90);
+        border-top: none;
+        p {
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
